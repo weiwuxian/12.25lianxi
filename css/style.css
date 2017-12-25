@@ -1,0 +1,80 @@
+/*
+* @Author: Marte
+* @Date:   2017-11-17 14:40:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-17 14:46:06
+*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 62.5%; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .wrap header, .wrap footer {
+    width: 100%;
+    height: 1.05rem;
+    display: flex;
+    flex-shrink: 0; }
+  .wrap header {
+    background: #fe5051;
+    justify-content: center; }
+    .wrap header h2 {
+      font-size: 0.4rem;
+      line-height: 1.05rem;
+      font-weight: normal;
+      color: #fff; }
+  .wrap section {
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    overflow-y: scroll; }
+    .wrap section .content {
+      width: 100%;
+      height: 100%; }
+      .wrap section .content ul {
+        width: 100%;
+        height: 100%; }
+        .wrap section .content ul li {
+          width: 100%;
+          height: 2rem;
+          background: #fff; }
+          .wrap section .content ul li h6 {
+            width: 100%;
+            height: 0.7rem;
+            padding-left: 0.3rem;
+            line-height: 0.7rem; }
+          .wrap section .content ul li table {
+            width: 80%;
+            height: 1.2rem; }
+            .wrap section .content ul li table thead {
+              width: 100%;
+              height: 50%; }
+              .wrap section .content ul li table thead tr {
+                width: 100%; }
+                .wrap section .content ul li table thead tr th {
+                  width: 25%; }
+            .wrap section .content ul li table tbody {
+              width: 100%;
+              height: 50%; }
+              .wrap section .content ul li table tbody tr {
+                width: 100%;
+                height: 100%; }
+                .wrap section .content ul li table tbody tr td {
+                  width: 25%; }
+  .wrap footer {
+    background: #fff; }
+
+/*# sourceMappingURL=style.css.map */

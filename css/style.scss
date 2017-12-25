@@ -1,0 +1,99 @@
+/*
+* @Author: Marte
+* @Date:   2017-11-17 14:40:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-17 14:46:06
+*/
+@charset "UTF-8";
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    -webkit-user-select:none;
+    user-select:none;
+    font-size:62.5%;
+}
+.wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+
+    header,footer{
+        width:100%;
+        height:1.05rem;
+        display:flex;
+        flex-shrink:0;
+    }
+    header{
+        background:#fe5051;
+        justify-content: center;
+        h2{
+            font-size: 0.4rem;
+            line-height: 1.05rem;
+            font-weight: normal;
+            color: #fff;
+        }
+    }
+
+    section{
+        width:100%;
+        flex-grow:1;
+        overflow:hidden;
+        overflow-y:scroll;
+        .content{
+            width: 100%;
+            height: 100%;
+            ul{
+                width: 100%;
+                height: 100%;
+                li{
+                    width: 100%;
+                    height: 2rem;
+                    background: #fff;
+                    h6{
+                        width: 100%;
+                        height: 0.7rem;
+                        padding-left: 0.3rem;
+                        line-height: 0.7rem;
+                    }
+                    table{
+                        width: 80%;
+                        height: 1.2rem;
+                        thead{
+                            width: 100%;
+                            height: 50%;
+                            tr{
+                                width: 100%;
+                                th{
+                                    width: 25%;
+                                }
+                            }
+                        }
+                        tbody{
+                            width: 100%;
+                            height: 50%;
+                            tr{
+                                width: 100%;
+                                height: 100%;
+                                td{
+                                    width: 25%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        background:#fff;
+    }
+}
